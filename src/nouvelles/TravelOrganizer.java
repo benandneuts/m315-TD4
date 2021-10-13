@@ -1,6 +1,7 @@
 package nouvelles;
 
 import java.util.ArrayList;
+import nouvelles.Trip;
 
 public class TravelOrganizer {
 	ArrayList<Service> services = new ArrayList<>();
@@ -18,7 +19,7 @@ public class TravelOrganizer {
 	}
 	
 	public Trip createATrip(Description d) {
-		return Trip(d);
+		return new Trip(d);
 		
 	}
 }
