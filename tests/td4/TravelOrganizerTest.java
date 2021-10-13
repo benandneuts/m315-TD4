@@ -11,6 +11,9 @@ import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import nouvelles.Description;
+import nouvelles.TravelOrganizer;
+import nouvelles.Trip;
 import td4.cars.Car;
 import td4.cars.CarRentalService;
 import td4.flights.Flight;
