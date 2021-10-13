@@ -6,11 +6,11 @@ import nouvelles.Trip;
 public class TravelOrganizer {
 	ArrayList<Service> services = new ArrayList<>();
 	
-	TravelOrganizer(ArrayList<Service> s) {
+	public TravelOrganizer(ArrayList<Service> s) {
 		services = s;
 	}
 	
-	TravelOrganizer() {
+	public TravelOrganizer() {
 		services = null;
 	}
 	

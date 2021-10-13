@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import td4.core.Service4PI;
+
 /**
  * This class allows the management of a set of flights
  * 
@@ -17,10 +19,10 @@ import java.util.stream.Stream;
 
 public class FlightService extends Service4PI<Flight> {
 
-	private List<Flight> flights = new ArrayList<>();
+	private ArrayList<Flight> flights = new ArrayList<>();
 
-	public FlightService(List<Flight> flights) {
-		this.flights = flights;
+	public FlightService(ArrayList<Flight> flights) {
+		super(flights);
 	}
 
 	/**

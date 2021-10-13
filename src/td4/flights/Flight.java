@@ -16,7 +16,7 @@ import td4.core.PayingItem;
  *
  *
  */
-public class Flight extends PayingItem {
+public class Flight implements PayingItem {
 
 	private static final   int NOT_ASSIGNED = -1;
 	private static final   String DEFAULT_DESTINATION= "Paris";

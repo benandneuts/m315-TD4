@@ -10,8 +10,8 @@ import td4.core.PayingItem;
  * @version 1.0
  */
 
-public class Car extends PayingItem {
-
+public class Car {
+	
 	private String numberPlate;
 	private double dayPrice;
 	
