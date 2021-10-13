@@ -11,6 +11,11 @@ import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import td4.cars.Car;
+import td4.cars.CarRentalService;
+import td4.flights.Flight;
+import td4.flights.FlightService;
+
 
 class TravelOrganizerTest {
 	
