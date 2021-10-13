@@ -21,9 +21,9 @@ public class Trip {
 	}
 	
 	public double getPrice() {
-		double price;
+		double price = 0;
 		for (int i=0 ; i<products.size() ; i++) {
-			price += products[i].getPrice();
+			price += products.get(i).getPrice();
 		}
 		return price;
 	}
