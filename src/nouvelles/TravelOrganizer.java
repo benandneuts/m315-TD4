@@ -1,7 +1,24 @@
 package nouvelles;
 
+import java.util.ArrayList;
+
 public class TravelOrganizer {
-	Service service = new Service();
+	ArrayList<Service> services = new ArrayList<>();
+	
+	TravelOrganizer(ArrayList<Service> s) {
+		services = s;
+	}
+	
 	TravelOrganizer() {
+		services = null;
+	}
+	
+	public void addService(Service s) {
+		services.add(s);
+	}
+	
+	public Trip createATrip(Description d) {
+		return Trip(d);
+		
 	}
 }

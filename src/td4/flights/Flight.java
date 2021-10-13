@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Random;
 
+import td4.core.PayingItem;
 /**
  * 
  * 
@@ -15,7 +16,7 @@ import java.util.Random;
  *
  *
  */
-public class Flight {
+public class Flight extends PayingItem {
 
 	private static final   int NOT_ASSIGNED = -1;
 	private static final   String DEFAULT_DESTINATION= "Paris";

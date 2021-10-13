@@ -1,6 +1,6 @@
 package td4.cars;
 
-
+import td4.core.PayingItem;
 
 /**
  * This class defines the notion of a car to be rented by associating it with a price per day.
@@ -10,7 +10,7 @@ package td4.cars;
  * @version 1.0
  */
 
-public class Car {
+public class Car extends PayingItem {
 
 	private String numberPlate;
 	private double dayPrice;

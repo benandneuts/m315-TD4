@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import td4.core.Service4PI;
 import td4.util.DateTools;
 import td4.util.NotPossibleCarRentalException;
 
@@ -17,7 +18,7 @@ import td4.util.NotPossibleCarRentalException;
  *
  * 
  */
-public class CarRentalService {
+public class CarRentalService extends Service4PI<Car> {
 
 	//Set of cars for rent
 	private List<Car> cars;

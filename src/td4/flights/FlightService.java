@@ -15,7 +15,7 @@ import java.util.stream.Stream;
  * 
  */
 
-public class FlightService {
+public class FlightService extends Service4PI<Flight> {
 
 	private List<Flight> flights = new ArrayList<>();
 
