@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 
 
 class TravelOrganizerTest {
-	int test;
+	
 	CarRentalService havis;
 	CarRentalService easyCar;
 	
