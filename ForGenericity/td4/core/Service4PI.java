@@ -6,7 +6,7 @@ import java.util.List;
 
 import td4.core.PayingItem;
 
-public class Service4PI<T implements PayingItem> {
+public class Service4PI<T extends PayingItem> {
 	protected List<T> payingItemList = new ArrayList<>();
 
 	public Service4PI(List<T> payingItemList) {
