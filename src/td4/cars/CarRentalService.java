@@ -2,9 +2,11 @@ package td4.cars;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 import td4.core.Service4PI;
+import td4.flights.Flight;
 import td4.util.DateTools;
 import td4.util.NotPossibleCarRentalException;
 
@@ -87,6 +89,14 @@ public class CarRentalService extends Service4PI<CarRental> {
 		return carRental;
 	}
 	
+	public List<CarRental> sortedByPrice() {
+		super.payingItemList.sort(Comparator.comparing(CarRental::getPrice));
+		return new ArrayList<>(super.payingItemList);
+	}
+	
+	public CarRental getFlyWithBestPrice() {
+		return this.sortedByPrice().get(0);
+	}
 	
 
 }
