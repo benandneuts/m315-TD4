@@ -4,9 +4,11 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+import nouvelles.Description;
+import nouvelles.Service;
 import td4.core.PayingItem;
 
-public class Service4PI<T extends PayingItem> {
+public class Service4PI<T extends PayingItem> implements Service {
 	protected List<T> payingItemList = new ArrayList<>();
 
 	public Service4PI(List<T> payingItemList) {
@@ -32,6 +34,12 @@ public class Service4PI<T extends PayingItem> {
 
 	public void add(T payingItem) {
 		payingItemList.add(payingItem);
+	}
+
+	@Override
+	public PayingItem find(Description d) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
