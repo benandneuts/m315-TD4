@@ -2,6 +2,8 @@ package td4.cars;
 
 import java.time.LocalDate;
 
+import td4.core.PayingItem;
+
 /**
  * 
  * The Car Rental class represents the rental of a car, for a given duration and start date.
@@ -14,7 +16,7 @@ import java.time.LocalDate;
  * @author blay
  *
  */
-public class CarRental {
+public class CarRental implements PayingItem {
 
 	private Car car;
 	private double dayPrice;

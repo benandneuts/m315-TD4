@@ -18,7 +18,7 @@ import td4.util.NotPossibleCarRentalException;
  *
  * 
  */
-public class CarRentalService extends Service4PI<Car> {
+public class CarRentalService extends Service4PI<CarRental> {
 
 	//Set of cars for rent
 	private ArrayList<Car> cars;
@@ -33,7 +33,8 @@ public class CarRentalService extends Service4PI<Car> {
 
 	//To create a car rental service,  you need to have cars.
 	public CarRentalService(ArrayList<Car> cars) {
-		super(cars);
+		super(new ArrayList<>());
+		this.cars = cars;
 	}
 
 	
