@@ -56,5 +56,8 @@ public class FlightService extends Service4PI<Flight> {
 		flights.sort(Comparator.comparing(Flight::getPrice));
 		return new ArrayList<>(flights);
 	}
-
+	
+	public Flight getFlyWithBestPrice() {
+		return this.sortedByPrice().get(0);
+	}
 }
