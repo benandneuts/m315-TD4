@@ -36,7 +36,7 @@ public class Car {
 
 	@Override
 	public String toString() {
-		return "Car [numberPlate=" + numberPlate + ", rentals=" + rentals + 
+		return "Car [numberPlate=" + numberPlate + //", rentals=" + rentals + 
 				", dayPrice=" + dayPrice + "]";
 	}
 	
