@@ -38,7 +38,13 @@ public class Service4PI<T extends PayingItem> implements Service {
 
 	@Override
 	public PayingItem find(Description d) {
-		// TODO Auto-generated method stub
+		for(int i = 0 ; i < trips.size(); i++) {
+			for(int j = 0 ; j < trips.get(i).getProducts().size(); j++) {
+				if( payingItemList.get(i).getProducts().get(j)description ?? == d ) {
+					return trips.get(i).getProducts().get(j);
+				}
+			}
+		}
 		return null;
 	}
 
