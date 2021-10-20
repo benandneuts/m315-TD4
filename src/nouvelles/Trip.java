@@ -31,6 +31,10 @@ public class Trip implements PayingItem {
 	public void addItem(PayingItem product) {
 		products.add(product);
 	}
+
+	public Description getDescription() {
+		return this.description;
+	}
 	
 	
 

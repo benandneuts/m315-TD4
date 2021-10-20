@@ -6,6 +6,7 @@ import java.util.List;
 
 import nouvelles.Description;
 import nouvelles.Service;
+import nouvelles.Trip;
 import td4.core.PayingItem;
 
 public class Service4PI<T extends PayingItem> implements Service {
@@ -38,11 +39,10 @@ public class Service4PI<T extends PayingItem> implements Service {
 
 	@Override
 	public PayingItem find(Description d) {
-		for(int i = 0 ; i < trips.size(); i++) {
-			for(int j = 0 ; j < trips.get(i).getProducts().size(); j++) {
-				if( payingItemList.get(i).getProducts().get(j)description ?? == d ) {
-					return trips.get(i).getProducts().get(j);
-				}
+		PayingItem tmp = new Trip(d);
+		for(int i = 0 ; i < payingItemList.size(); i++) {
+				if( payingItemList.get(i) == tmp ) {
+					return payingItemList.get(i);
 			}
 		}
 		return null;

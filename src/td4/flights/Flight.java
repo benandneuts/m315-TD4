@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Random;
 
+import nouvelles.Description;
 import td4.core.PayingItem;
 /**
  * 

@@ -3,6 +3,7 @@ package nouvelles;
 import java.util.ArrayList;
 import nouvelles.Trip;
 import td4.cars.CarRental;
+import td4.core.PayingItem;
 import td4.core.Service4PI;
 
 public class TravelOrganizer {
@@ -21,6 +22,9 @@ public class TravelOrganizer {
 	}
 
 	public Trip createATrip(Description d) {
-		return new Trip(d);
+		for(int i = 0 ; i < services.size(); i++) {
+				return (Trip) services.get(i).find(d);
+		}
+		return null;
 	}
 }
