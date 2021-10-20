@@ -3,7 +3,7 @@ package nouvelles;
 import java.util.ArrayList;
 import td4.core.PayingItem;
 
-public class Trip {
+public class Trip implements PayingItem {
 	
 	ArrayList<PayingItem> products;
 	Description description;
