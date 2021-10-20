@@ -6,9 +6,9 @@ import td4.cars.CarRental;
 import td4.core.Service4PI;
 
 public class TravelOrganizer {
-	ArrayList<Service> services = new ArrayList<>();
+	ArrayList<Service4PI> services = new ArrayList<>();
 	
-	public TravelOrganizer(ArrayList<Service> s) {
+	public TravelOrganizer(ArrayList<Service4PI> s) {
 		this.services = s;
 	}
 	
@@ -16,7 +16,7 @@ public class TravelOrganizer {
 		this.services = null;
 	}
 	
-	public void addService(Service s) {
+	public void addService(Service4PI s) {
 		this.services.add(s);
 	}
 
