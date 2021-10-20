@@ -3,7 +3,6 @@ package nouvelles;
 import java.util.*;
 
 import td4.core.PayingItem;
-import td4.core.PayingItem;
 
 public interface Service {
 	
